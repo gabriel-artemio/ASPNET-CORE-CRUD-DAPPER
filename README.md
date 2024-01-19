@@ -1,5 +1,5 @@
 ## Perifa
 
 Projeto inicial, vai contar com as mecanicas básicas:
-** Movimentação terceira pessoa
-** Câmera em terceira pessoa
+<br>Movimentação terceira pessoa
+<br>Câmera em terceira pessoa
