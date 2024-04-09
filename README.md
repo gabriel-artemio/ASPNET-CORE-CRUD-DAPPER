@@ -1,5 +1,3 @@
-## Perifa
+## Meu Campeonato - API
 
-Projeto inicial, vai contar com as mecanicas básicas:
-<br>*Movimentação terceira pessoa
-<br>*Câmera em terceira pessoa
+É uma aplicação para criar calendários de jogos para campeonatos de futebol.
