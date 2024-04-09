@@ -1,0 +1,14 @@
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\MeuCampeonato.Console\bin\Debug\net6.0\MeuCampeonato.Console.exe
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\MeuCampeonato.Console\bin\Debug\net6.0\MeuCampeonato.Console.deps.json
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\MeuCampeonato.Console\bin\Debug\net6.0\MeuCampeonato.Console.runtimeconfig.json
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\MeuCampeonato.Console\bin\Debug\net6.0\MeuCampeonato.Console.dll
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\MeuCampeonato.Console\bin\Debug\net6.0\MeuCampeonato.Console.pdb
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\MeuCampeonato.Console\obj\Debug\net6.0\MeuCampeonato.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\MeuCampeonato.Console\obj\Debug\net6.0\MeuCampeonato.Console.AssemblyInfoInputs.cache
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\MeuCampeonato.Console\obj\Debug\net6.0\MeuCampeonato.Console.AssemblyInfo.cs
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\MeuCampeonato.Console\obj\Debug\net6.0\MeuCampeonato.Console.csproj.CoreCompileInputs.cache
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\MeuCampeonato.Console\obj\Debug\net6.0\MeuCampeonato.Console.dll
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\MeuCampeonato.Console\obj\Debug\net6.0\refint\MeuCampeonato.Console.dll
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\MeuCampeonato.Console\obj\Debug\net6.0\MeuCampeonato.Console.pdb
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\MeuCampeonato.Console\obj\Debug\net6.0\MeuCampeonato.Console.genruntimeconfig.cache
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\MeuCampeonato.Console\obj\Debug\net6.0\ref\MeuCampeonato.Console.dll
