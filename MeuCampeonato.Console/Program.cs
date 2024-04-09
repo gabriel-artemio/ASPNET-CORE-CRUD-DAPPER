@@ -15,16 +15,17 @@ class Program
         int numeroJogos = (numeroCompetidores * (numeroCompetidores - 1)) / 2;
 
         // Criando um array de competidores
-        char[] competidores = new char[numeroCompetidores];
+        string[] competidores = new string[numeroCompetidores];
 
-        // Preenchendo o array de competidores com letras de A a partir do número de competidores
+        // Recebendo os nomes dos competidores
         for (int i = 0; i < numeroCompetidores; i++)
         {
-            competidores[i] = (char)('A' + i);
+            Console.WriteLine($"Digite o nome do competidor {i + 1}:");
+            competidores[i] = Console.ReadLine();
         }
 
         // Criando o calendário de jogos
-        char[,] calendarioJogos = new char[numeroCompetidores, numeroCompetidores - 1];
+        string[,] calendarioJogos = new string[numeroCompetidores, numeroCompetidores - 1];
 
         // Preenchendo o calendário de jogos com os emparelhamentos
         for (int rodada = 0; rodada < numeroCompetidores - 1; rodada++)
@@ -53,9 +54,9 @@ class Program
     }
 
     // Método para girar os competidores
-    static void RotateCompetidores(char[] competidores)
+    static void RotateCompetidores(string[] competidores)
     {
-        char temp = competidores[competidores.Length - 1];
+        string temp = competidores[competidores.Length - 1];
         for (int i = competidores.Length - 1; i > 1; i--)
         {
             competidores[i] = competidores[i - 1];
