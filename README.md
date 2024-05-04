@@ -2,11 +2,11 @@
 
 ### Aplicação para criar calendários de jogos para campeonatos de futebol.
 #### Funções futuras:
-<ul>
+<ol>
   <li>Gerar calendário de jogos</li>
   <li>Gerar simulador de partida, de acordo com o calendário</li>
   <li>Armazenar o resultado e computar os pontos</li>
-</ul>
+</ol>
 
 #### Funções atuais:
 <ul>
