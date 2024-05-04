@@ -1,4 +1,4 @@
-## Meu Campeonato - API
+## Meu Campeonato - Console
 
 ### Aplicação para criar calendários de jogos para campeonatos de futebol.
 #### Funções futuras:
