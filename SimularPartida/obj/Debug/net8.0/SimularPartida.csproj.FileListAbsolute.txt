@@ -1,0 +1,14 @@
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\SimularPartida\bin\Debug\net8.0\SimularPartida.exe
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\SimularPartida\bin\Debug\net8.0\SimularPartida.deps.json
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\SimularPartida\bin\Debug\net8.0\SimularPartida.runtimeconfig.json
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\SimularPartida\bin\Debug\net8.0\SimularPartida.dll
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\SimularPartida\bin\Debug\net8.0\SimularPartida.pdb
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\SimularPartida\obj\Debug\net8.0\SimularPartida.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\SimularPartida\obj\Debug\net8.0\SimularPartida.AssemblyInfoInputs.cache
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\SimularPartida\obj\Debug\net8.0\SimularPartida.AssemblyInfo.cs
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\SimularPartida\obj\Debug\net8.0\SimularPartida.csproj.CoreCompileInputs.cache
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\SimularPartida\obj\Debug\net8.0\SimularPartida.dll
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\SimularPartida\obj\Debug\net8.0\refint\SimularPartida.dll
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\SimularPartida\obj\Debug\net8.0\SimularPartida.pdb
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\SimularPartida\obj\Debug\net8.0\SimularPartida.genruntimeconfig.cache
+C:\Users\ARLAB\projetos\outros_projetos\teste\dotnet\SimularPartida\obj\Debug\net8.0\ref\SimularPartida.dll
