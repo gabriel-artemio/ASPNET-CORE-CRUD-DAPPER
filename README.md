@@ -13,4 +13,5 @@
   <li>Exibindo a lista dos clubes participantes</li>
   <li>Pegando a lista de clubes e gerando o calendário de jogos</li>
   <li>Tem um projeto console que simula uma partida de futebol com algumas funções</li>
+  <li>Usando critérios como overall, faltas, 90 minutos e cartões</li>
 </ul>
