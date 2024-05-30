@@ -12,4 +12,5 @@
 <ul>
   <li>Exibindo a lista dos clubes participantes</li>
   <li>Pegando a lista de clubes e gerando o calendário de jogos</li>
+  <li>Tem um projeto console que simula uma partida de futebol com algumas funções</li>
 </ul>
