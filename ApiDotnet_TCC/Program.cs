@@ -1,25 +1,25 @@
+using ApiDotnet_TCC.Data;
+using ApiDotnet_TCC.Models;
+
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
 var app = builder.Build();
+var db = new Db();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+db.Initialize();
+
+app.MapPost("/api/geladeira/data", (DadosGeladeira data) =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    db.Insert(data);
 
-app.UseHttpsRedirection();
+    return Results.Ok(new
+    {
+        message = "Dados salvos"
+    });
+});
 
-app.UseAuthorization();
-
-app.MapControllers();
+app.MapGet("/api/geladeira/data", () =>
+{
+    return db.GetLast();
+});
 
 app.Run();

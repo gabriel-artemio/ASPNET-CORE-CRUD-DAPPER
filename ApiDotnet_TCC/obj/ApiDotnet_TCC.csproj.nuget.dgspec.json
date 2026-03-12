@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\dotnet.TCC_API\\ApiDotnet_TCC\\ApiDotnet_TCC\\ApiDotnet_TCC.csproj": {}
+    "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\ApiDotnet_TCC\\ApiDotnet_TCC\\ApiDotnet_TCC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\dotnet.TCC_API\\ApiDotnet_TCC\\ApiDotnet_TCC\\ApiDotnet_TCC.csproj": {
+    "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\ApiDotnet_TCC\\ApiDotnet_TCC\\ApiDotnet_TCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\dotnet.TCC_API\\ApiDotnet_TCC\\ApiDotnet_TCC\\ApiDotnet_TCC.csproj",
+        "projectUniqueName": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\ApiDotnet_TCC\\ApiDotnet_TCC\\ApiDotnet_TCC.csproj",
         "projectName": "ApiDotnet_TCC",
-        "projectPath": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\dotnet.TCC_API\\ApiDotnet_TCC\\ApiDotnet_TCC\\ApiDotnet_TCC.csproj",
+        "projectPath": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\ApiDotnet_TCC\\ApiDotnet_TCC\\ApiDotnet_TCC.csproj",
         "packagesPath": "C:\\Users\\arlab\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\dotnet.TCC_API\\ApiDotnet_TCC\\ApiDotnet_TCC\\obj\\",
+        "outputPath": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\ApiDotnet_TCC\\ApiDotnet_TCC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.25, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
