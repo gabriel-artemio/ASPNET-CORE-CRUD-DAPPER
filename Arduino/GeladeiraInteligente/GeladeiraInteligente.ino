@@ -56,11 +56,11 @@ void loop()
   Serial.println("JSON enviado:");
   Serial.println(json);
 
-  if (client.connect(server, 5000))
+  if (client.connect(server, 80))
   {
     Serial.println("Conectado na API");
 
-    client.println("POST /api/geladeira/dados HTTP/1.1");
+    client.println("POST /api_tcc/api/geladeira/dados HTTP/1.1");
     client.println("Host: 192.168.0.10");
     client.println("Content-Type: application/json");
     client.print("Content-Length: ");
