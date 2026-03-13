@@ -52,9 +52,9 @@ namespace ApiDotnet_TCC.Data
             command.ExecuteNonQuery();
         }
 
-        public List<object> GetLast()
+        public List<DadosGeladeira> GetLast()
         {
-            var list = new List<object>();
+            var list = new List<DadosGeladeira>();
 
             using var connection = new SqliteConnection(_connectionString);
 
@@ -64,7 +64,7 @@ namespace ApiDotnet_TCC.Data
 
             command.CommandText =
             @"
-            SELECT temp_sensor_1, temp_sensor_2, temp_sensor_externo, porta_aberta
+            SELECT temp_sensor_1, temp_sensor_2, temp_sensor_externo, porta_aberta, timestamp
             FROM dados_geladeira
             ORDER BY timestamp DESC
             LIMIT 50;
@@ -74,13 +74,13 @@ namespace ApiDotnet_TCC.Data
 
             while (reader.Read())
             {
-                list.Add(new
+                list.Add(new DadosGeladeira
                 {
                     temp_sensor_1 = reader.GetDouble(0),
                     temp_sensor_2 = reader.GetDouble(1),
                     temp_sensor_externo = reader.GetDouble(2),
-                    porta_aberta = reader.GetInt32(3),
-                    data_hora = reader.GetString(4)
+                    porta_aberta = reader.GetBoolean(3),
+                    timestamp = reader.GetDateTime(4)
                 });
             }
 
