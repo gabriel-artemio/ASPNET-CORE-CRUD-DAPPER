@@ -14,7 +14,7 @@ DHT dht3(DHTPIN3, DHTTYPE);
 
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 
-IPAddress server(192,168,0,10); // IP do servidor da API
+IPAddress server(192,168,0,100); // IP do servidor da API
 
 EthernetClient client;
 

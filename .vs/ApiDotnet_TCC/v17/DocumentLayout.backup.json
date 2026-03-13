@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\ApiDotnet_TCC\\",
+  "WorkspaceRootPath": "C:\\projetos\\dotnet.TCC_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6E8F58BE-1BB5-4B6A-8B17-B2FFC4FD9077}|ApiDotnet_TCC\\ApiDotnet_TCC.csproj|c:\\users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\apidotnet_tcc\\apidotnet_tcc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E8F58BE-1BB5-4B6A-8B17-B2FFC4FD9077}|ApiDotnet_TCC\\ApiDotnet_TCC.csproj|solutionrelative:apidotnet_tcc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E8F58BE-1BB5-4B6A-8B17-B2FFC4FD9077}|ApiDotnet_TCC\\ApiDotnet_TCC.csproj|c:\\users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\apidotnet_tcc\\apidotnet_tcc\\data\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6E8F58BE-1BB5-4B6A-8B17-B2FFC4FD9077}|ApiDotnet_TCC\\ApiDotnet_TCC.csproj|c:\\projetos\\dotnet.tcc_api\\apidotnet_tcc\\data\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E8F58BE-1BB5-4B6A-8B17-B2FFC4FD9077}|ApiDotnet_TCC\\ApiDotnet_TCC.csproj|solutionrelative:apidotnet_tcc\\data\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E8F58BE-1BB5-4B6A-8B17-B2FFC4FD9077}|ApiDotnet_TCC\\ApiDotnet_TCC.csproj|c:\\users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\apidotnet_tcc\\apidotnet_tcc\\models\\dadosgeladeira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6E8F58BE-1BB5-4B6A-8B17-B2FFC4FD9077}|ApiDotnet_TCC\\ApiDotnet_TCC.csproj|c:\\projetos\\dotnet.tcc_api\\apidotnet_tcc\\models\\dadosgeladeira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E8F58BE-1BB5-4B6A-8B17-B2FFC4FD9077}|ApiDotnet_TCC\\ApiDotnet_TCC.csproj|solutionrelative:apidotnet_tcc\\models\\dadosgeladeira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E8F58BE-1BB5-4B6A-8B17-B2FFC4FD9077}|ApiDotnet_TCC\\ApiDotnet_TCC.csproj|c:\\users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\apidotnet_tcc\\apidotnet_tcc\\controllers\\geladeiracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6E8F58BE-1BB5-4B6A-8B17-B2FFC4FD9077}|ApiDotnet_TCC\\ApiDotnet_TCC.csproj|solutionrelative:apidotnet_tcc\\controllers\\geladeiracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E8F58BE-1BB5-4B6A-8B17-B2FFC4FD9077}|ApiDotnet_TCC\\ApiDotnet_TCC.csproj|c:\\projetos\\dotnet.tcc_api\\apidotnet_tcc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E8F58BE-1BB5-4B6A-8B17-B2FFC4FD9077}|ApiDotnet_TCC\\ApiDotnet_TCC.csproj|solutionrelative:apidotnet_tcc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,54 +42,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Db.cs",
-              "DocumentMoniker": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\ApiDotnet_TCC\\ApiDotnet_TCC\\Data\\Db.cs",
+              "DocumentMoniker": "C:\\projetos\\dotnet.TCC_API\\ApiDotnet_TCC\\Data\\Db.cs",
               "RelativeDocumentMoniker": "ApiDotnet_TCC\\Data\\Db.cs",
-              "ToolTip": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\ApiDotnet_TCC\\ApiDotnet_TCC\\Data\\Db.cs",
+              "ToolTip": "C:\\projetos\\dotnet.TCC_API\\ApiDotnet_TCC\\Data\\Db.cs",
               "RelativeToolTip": "ApiDotnet_TCC\\Data\\Db.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAFMAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-12T22:09:15.367Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\ApiDotnet_TCC\\ApiDotnet_TCC\\Program.cs",
+              "DocumentMoniker": "C:\\projetos\\dotnet.TCC_API\\ApiDotnet_TCC\\Program.cs",
               "RelativeDocumentMoniker": "ApiDotnet_TCC\\Program.cs",
-              "ToolTip": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\ApiDotnet_TCC\\ApiDotnet_TCC\\Program.cs",
+              "ToolTip": "C:\\projetos\\dotnet.TCC_API\\ApiDotnet_TCC\\Program.cs",
               "RelativeToolTip": "ApiDotnet_TCC\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-12T21:42:09.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "DadosGeladeira.cs",
-              "DocumentMoniker": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\ApiDotnet_TCC\\ApiDotnet_TCC\\Models\\DadosGeladeira.cs",
+              "DocumentMoniker": "C:\\projetos\\dotnet.TCC_API\\ApiDotnet_TCC\\Models\\DadosGeladeira.cs",
               "RelativeDocumentMoniker": "ApiDotnet_TCC\\Models\\DadosGeladeira.cs",
-              "ToolTip": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\ApiDotnet_TCC\\ApiDotnet_TCC\\Models\\DadosGeladeira.cs",
+              "ToolTip": "C:\\projetos\\dotnet.TCC_API\\ApiDotnet_TCC\\Models\\DadosGeladeira.cs",
               "RelativeToolTip": "ApiDotnet_TCC\\Models\\DadosGeladeira.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-12T21:26:12.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GeladeiraController.cs",
-              "DocumentMoniker": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\ApiDotnet_TCC\\ApiDotnet_TCC\\Controllers\\GeladeiraController.cs",
-              "RelativeDocumentMoniker": "ApiDotnet_TCC\\Controllers\\GeladeiraController.cs",
-              "ToolTip": "C:\\Users\\arlab\\projetos\\outros_projetos\\projetos_2526\\back_tcc\\ApiDotnet_TCC\\ApiDotnet_TCC\\Controllers\\GeladeiraController.cs",
-              "RelativeToolTip": "ApiDotnet_TCC\\Controllers\\GeladeiraController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T21:23:59.097Z",
               "EditorCaption": ""
             }
           ]
