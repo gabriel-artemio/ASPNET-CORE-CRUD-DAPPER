@@ -3,10 +3,12 @@
     public class DadosGeladeira
     {
         public int id { get; set; }
-        public double temp_sensor_1 { get; set; }
-        public double temp_sensor_2 { get; set; }
-        public double temp_sensor_externo { get; set; }
-        public bool porta_aberta { get; set; }
-        public DateTime timestamp { get; set; } = DateTime.UtcNow;
+        public double temp1 { get; set; }
+        public double temp2 { get; set; }
+        public double tempExterna { get; set; }
+        public bool porta { get; set; }
+        public int processado { get; set; }
+        public DateTime timestamp { get; set; } = DateTime.Now;
+        public int hora { get; set; } = DateTime.Now.Hour;
     }
 }

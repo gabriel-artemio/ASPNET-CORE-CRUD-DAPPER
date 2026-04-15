@@ -14,14 +14,13 @@ DHT dht3(DHTPIN3, DHTTYPE);
 
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
 
-IPAddress server(192,168,0,100); // IP do servidor da API
+IPAddress server(192, 168, 0, 100);  // IP do servidor da API
 
 EthernetClient client;
 
-int portaSensor = 7; // sensor magnético
+int portaSensor = 7;  // sensor magnético
 
-void setup()
-{
+void setup() {
   Serial.begin(9600);
 
   pinMode(portaSensor, INPUT);
@@ -38,8 +37,7 @@ void setup()
   dht3.begin();
 }
 
-void loop()
-{
+void loop() {
   float t1 = dht1.readTemperature();
   float t2 = dht2.readTemperature();
   float t3 = dht3.readTemperature();
@@ -50,28 +48,25 @@ void loop()
   json += "\"temp_sensor_1\":" + String(t1) + ",";
   json += "\"temp_sensor_2\":" + String(t2) + ",";
   json += "\"temp_sensor_externo\":" + String(t3) + ",";
-  json += "\"porta_aberta\":" + String(porta ? "true":"false");
+  json += "\"porta_aberta\":" + String(porta ? "true" : "false");
   json += "}";
 
   Serial.println("JSON enviado:");
   Serial.println(json);
 
-  if (client.connect(server, 80))
-  {
+  if (client.connect(server, 80)) {
     Serial.println("Conectado na API");
 
     client.println("POST /api_tcc/api/geladeira/dados HTTP/1.1");
-    client.println("Host: 192.168.0.10");
+    client.println("Host: 192.168.0.100");
     client.println("Content-Type: application/json");
     client.print("Content-Length: ");
     client.println(json.length());
     client.println();
     client.println(json);
 
-  }
-  else
-  {
-    Serial.println("Falha na conexão");
+  } else {
+    Serial.println("ERR001 : Falha ao conectar no servidor");
   }
 
   client.stop();

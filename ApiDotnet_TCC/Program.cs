@@ -9,6 +9,7 @@ db.Initialize();
 
 app.MapPost("/api/geladeira/data", (DadosGeladeira data) =>
 {
+    data.hora = DateTime.Now.Hour;
     db.Insert(data);
 
     return Results.Ok(new

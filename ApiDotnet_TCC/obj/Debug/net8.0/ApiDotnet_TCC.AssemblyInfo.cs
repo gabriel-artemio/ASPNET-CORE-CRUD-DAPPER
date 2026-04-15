@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiDotnet_TCC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+faa53ddfd8d6ab74b64a29e745fefc59d0cd844c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28ca4e2fda69e9e4e229861afc39c053cd8b1ffb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiDotnet_TCC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiDotnet_TCC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -19,11 +19,13 @@ namespace ApiDotnet_TCC.Data
             @"
             CREATE TABLE IF NOT EXISTS dados_geladeira (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                temp_sensor_1 REAL,
-                temp_sensor_2 REAL,
-                temp_sensor_externo REAL,
-                porta_aberta INTEGER,
-                timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+                temp1 REAL,
+                temp2 REAL,
+                tempExterna REAL,
+                porta INTEGER,
+                processado INTEGER DEFAULT 0,
+                timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+                hora INTEGER
             );
             ";
 
@@ -40,14 +42,15 @@ namespace ApiDotnet_TCC.Data
 
             command.CommandText =
             @"
-            INSERT INTO dados_geladeira (temp_sensor_1, temp_sensor_2, temp_sensor_externo, porta_aberta)
-            VALUES ($temp_sensor_1, $temp_sensor_2, $temp_sensor_externo, $porta_aberta);
+            INSERT INTO dados_geladeira (temp1, temp2, tempExterna, porta, hora)
+            VALUES (@temp1, @temp2, @tempExterna, @porta, @hora);
             ";
 
-            command.Parameters.AddWithValue("temp_sensor_1", data.temp_sensor_1);
-            command.Parameters.AddWithValue("temp_sensor_2", data.temp_sensor_2);
-            command.Parameters.AddWithValue("temp_sensor_externo", data.temp_sensor_externo);
-            command.Parameters.AddWithValue("porta_aberta", data.porta_aberta ? 1 : 0);
+            command.Parameters.AddWithValue("@temp1", data.temp1);
+            command.Parameters.AddWithValue("@temp2", data.temp2);
+            command.Parameters.AddWithValue("@tempExterna", data.tempExterna);
+            command.Parameters.AddWithValue("@porta", data.porta ? 1 : 0);
+            command.Parameters.AddWithValue("@hora", data.hora);
 
             command.ExecuteNonQuery();
         }
@@ -64,7 +67,7 @@ namespace ApiDotnet_TCC.Data
 
             command.CommandText =
             @"
-            SELECT temp_sensor_1, temp_sensor_2, temp_sensor_externo, porta_aberta, timestamp
+            SELECT id, temp1, temp2, tempExterna, porta, processado, timestamp, hora
             FROM dados_geladeira
             ORDER BY timestamp DESC
             LIMIT 50;
@@ -76,11 +79,14 @@ namespace ApiDotnet_TCC.Data
             {
                 list.Add(new DadosGeladeira
                 {
-                    temp_sensor_1 = reader.GetDouble(0),
-                    temp_sensor_2 = reader.GetDouble(1),
-                    temp_sensor_externo = reader.GetDouble(2),
-                    porta_aberta = reader.GetBoolean(3),
-                    timestamp = reader.GetDateTime(4)
+                    id = reader.GetInt32(0),
+                    temp1 = reader.GetDouble(1),
+                    temp2 = reader.GetDouble(2),
+                    tempExterna = reader.GetDouble(3),
+                    porta = reader.GetBoolean(4),
+                    processado = reader.GetInt32(5),
+                    timestamp = reader.GetDateTime(6),
+                    hora = reader.GetInt32(7)
                 });
             }
 
