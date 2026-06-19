@@ -1,6 +1,0 @@
-@ApiDotnet_TCC_HostAddress = http://localhost:5042
-
-GET {{ApiDotnet_TCC_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
