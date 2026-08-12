@@ -1,18 +1,53 @@
 # CRUD com ASP.NET Core, Dapper e MySQL
 
-## Criando a base de dados para teste:
+## Criando a base de dados para teste
 
-create database tutorial;
-use tutorial;
+Execute os comandos abaixo no MySQL para criar o banco de dados e a tabela `funcionario`:
 
-create table funcionario(
-    id_funcionario int primary key auto_increment,
-    nm_funcionario varchar(100),
-    cargo_funcionario varchar(100),
-    cadastrado_em datetime default current_timestamp
+```sql
+CREATE DATABASE tutorial;
+
+USE tutorial;
+
+CREATE TABLE funcionario (
+    id_funcionario INT PRIMARY KEY AUTO_INCREMENT,
+    nm_funcionario VARCHAR(100),
+    cargo_funcionario VARCHAR(100),
+    cadastrado_em DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+## Inserindo dados de teste
+
+Após criar a tabela, execute os comandos abaixo para inserir alguns funcionários:
+
+```sql
+INSERT INTO funcionario (
+    nm_funcionario,
+    cargo_funcionario
+) VALUES (
+    'Ciclano da Silva',
+    'Desenvolvedor'
 );
 
-## Inserindo os dados
+INSERT INTO funcionario (
+    nm_funcionario,
+    cargo_funcionario
+) VALUES (
+    'Fulano Rocha',
+    'Financeiro'
+);
+```
 
-INSERT INTO `tutorial`.`funcionario` (`nm_funcionario`, `cargo_funcionario`) VALUES ('Ciclano da Silva', 'Desenvolvedor');
-INSERT INTO `tutorial`.`funcionario` (`nm_funcionario`, `cargo_funcionario`) VALUES ('Fulano Rocha', 'Financeiro');
+### Verificando os dados
+
+Para verificar os registros inseridos:
+
+```sql
+SELECT
+    id_funcionario,
+    nm_funcionario,
+    cargo_funcionario,
+    cadastrado_em
+FROM funcionario;
+```
