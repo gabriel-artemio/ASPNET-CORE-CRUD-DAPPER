@@ -1,7 +1,6 @@
-﻿using ApiWeb_Dapper.Models;
-using Dapper;
+﻿using ApiWeb_Dapper.BLL;
+using ApiWeb_Dapper.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Data;
 
 namespace ApiWeb_Dapper.Controllers
 {
@@ -9,11 +8,11 @@ namespace ApiWeb_Dapper.Controllers
     [ApiController]
     public class FuncionariosController : ControllerBase
     {
-        private readonly IDbConnection _dbConnection;
+        private readonly FuncionarioBLL _funcionarioBLL;
 
-        public FuncionariosController(IDbConnection dbConnection)
+        public FuncionariosController(FuncionarioBLL funcionarioBLL)
         {
-            _dbConnection = dbConnection;
+            _funcionarioBLL = funcionarioBLL;
         }
 
         [HttpGet]
@@ -21,14 +20,8 @@ namespace ApiWeb_Dapper.Controllers
         {
             try
             {
-                var funcionarios = _dbConnection.Query<Funcionario>(
-                    @"SELECT 
-                        id_funcionario, 
-                        nm_funcionario, 
-                        cargo_funcionario, 
-                        cadastrado_em 
-                      FROM Funcionario 
-                      ORDER BY nm_funcionario");
+                var funcionarios =
+                    _funcionarioBLL.GetAll();
 
                 return Ok(funcionarios);
             }
@@ -47,16 +40,8 @@ namespace ApiWeb_Dapper.Controllers
         {
             try
             {
-                var funcionario = _dbConnection
-                    .QueryFirstOrDefault<Funcionario>(
-                        @"SELECT 
-                            id_funcionario, 
-                            nm_funcionario, 
-                            cargo_funcionario, 
-                            cadastrado_em 
-                          FROM Funcionario 
-                          WHERE id_funcionario = @id",
-                        new { id });
+                var funcionario =
+                    _funcionarioBLL.GetById(id);
 
                 if (funcionario == null)
                 {
@@ -79,60 +64,28 @@ namespace ApiWeb_Dapper.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] Funcionario funcionario)
+        public IActionResult Post(
+            [FromBody] Funcionario funcionario)
         {
             try
             {
-                if (funcionario == null)
-                {
-                    return BadRequest(new
-                    {
-                        mensagem = "Os dados do funcionário são obrigatórios."
-                    });
-                }
-
-                if (string.IsNullOrWhiteSpace(funcionario.nm_funcionario))
-                {
-                    return BadRequest(new
-                    {
-                        mensagem = "O nome do funcionário é obrigatório."
-                    });
-                }
-
-                if (string.IsNullOrWhiteSpace(funcionario.cargo_funcionario))
-                {
-                    return BadRequest(new
-                    {
-                        mensagem = "O cargo do funcionário é obrigatório."
-                    });
-                }
-
-                var sql = @"
-                    INSERT INTO Funcionario
-                    (
-                        nm_funcionario,
-                        cargo_funcionario,
-                        cadastrado_em
-                    )
-                    VALUES
-                    (
-                        @nm_funcionario,
-                        @cargo_funcionario,
-                        NOW()
-                    );
-
-                    SELECT LAST_INSERT_ID();";
-
-                var id = _dbConnection.ExecuteScalar<int>(
-                    sql,
-                    funcionario);
+                var id =
+                    _funcionarioBLL.Insert(funcionario);
 
                 funcionario.id_funcionario = id;
 
                 return CreatedAtAction(
                     nameof(GetById),
-                    new { id = id },
-                    funcionario);
+                    new { id },
+                    funcionario
+                );
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new
+                {
+                    mensagem = ex.Message
+                });
             }
             catch (Exception ex)
             {
@@ -145,46 +98,19 @@ namespace ApiWeb_Dapper.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] Funcionario funcionario)
+        public IActionResult Put(
+            int id,
+            [FromBody] Funcionario funcionario)
         {
             try
             {
-                if (funcionario == null)
-                {
-                    return BadRequest(new
-                    {
-                        mensagem = "Os dados do funcionário são obrigatórios."
-                    });
-                }
+                var atualizado =
+                    _funcionarioBLL.Update(
+                        id,
+                        funcionario
+                    );
 
-                if (string.IsNullOrWhiteSpace(funcionario.nm_funcionario))
-                {
-                    return BadRequest(new
-                    {
-                        mensagem = "O nome do funcionário é obrigatório."
-                    });
-                }
-
-                if (string.IsNullOrWhiteSpace(funcionario.cargo_funcionario))
-                {
-                    return BadRequest(new
-                    {
-                        mensagem = "O cargo do funcionário é obrigatório."
-                    });
-                }
-
-                var funcionarioExistente = _dbConnection
-                    .QueryFirstOrDefault<Funcionario>(
-                        @"SELECT 
-                            id_funcionario,
-                            nm_funcionario,
-                            cargo_funcionario,
-                            cadastrado_em
-                          FROM Funcionario
-                          WHERE id_funcionario = @id",
-                        new { id });
-
-                if (funcionarioExistente == null)
+                if (!atualizado)
                 {
                     return NotFound(new
                     {
@@ -192,37 +118,21 @@ namespace ApiWeb_Dapper.Controllers
                     });
                 }
 
-                var sql = @"
-                    UPDATE Funcionario
-                    SET
-                        nm_funcionario = @nm_funcionario,
-                        cargo_funcionario = @cargo_funcionario
-                    WHERE id_funcionario = @id";
-
-                var linhasAfetadas = _dbConnection.Execute(
-                    sql,
-                    new
-                    {
-                        id,
-                        funcionario.nm_funcionario,
-                        funcionario.cargo_funcionario
-                    });
-
-                if (linhasAfetadas == 0)
-                {
-                    return BadRequest(new
-                    {
-                        mensagem = "Não foi possível alterar o funcionário."
-                    });
-                }
-
-                funcionario.id_funcionario = id;
-                funcionario.cadastrado_em = funcionarioExistente.cadastrado_em;
+                var funcionarioAtualizado =
+                    _funcionarioBLL.GetById(id);
 
                 return Ok(new
                 {
-                    mensagem = "Funcionário alterado com sucesso.",
-                    funcionario
+                    mensagem =
+                        "Funcionário alterado com sucesso.",
+                    funcionario = funcionarioAtualizado
+                });
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new
+                {
+                    mensagem = ex.Message
                 });
             }
             catch (Exception ex)
@@ -240,18 +150,10 @@ namespace ApiWeb_Dapper.Controllers
         {
             try
             {
-                var funcionario = _dbConnection
-                    .QueryFirstOrDefault<Funcionario>(
-                        @"SELECT 
-                            id_funcionario,
-                            nm_funcionario,
-                            cargo_funcionario,
-                            cadastrado_em
-                          FROM Funcionario
-                          WHERE id_funcionario = @id",
-                        new { id });
+                var excluido =
+                    _funcionarioBLL.Delete(id);
 
-                if (funcionario == null)
+                if (!excluido)
                 {
                     return NotFound(new
                     {
@@ -259,25 +161,10 @@ namespace ApiWeb_Dapper.Controllers
                     });
                 }
 
-                var sql = @"
-                    DELETE FROM Funcionario
-                    WHERE id_funcionario = @id";
-
-                var linhasAfetadas = _dbConnection.Execute(
-                    sql,
-                    new { id });
-
-                if (linhasAfetadas == 0)
-                {
-                    return BadRequest(new
-                    {
-                        mensagem = "Não foi possível excluir o funcionário."
-                    });
-                }
-
                 return Ok(new
                 {
-                    mensagem = "Funcionário excluído com sucesso."
+                    mensagem =
+                        "Funcionário excluído com sucesso."
                 });
             }
             catch (Exception ex)

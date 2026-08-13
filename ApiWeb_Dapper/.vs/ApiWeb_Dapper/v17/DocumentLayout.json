@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\meus_projetos\\teste\\ASPNET-CORE-CRUD-DAPPER\\ApiWeb_Dapper\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|c:\\meus_projetos\\teste\\aspnet-core-crud-dapper\\apiweb_dapper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|c:\\meus_projetos\\teste\\aspnet-core-crud-dapper\\apiweb_dapper\\controllers\\funcionarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|solutionrelative:controllers\\funcionarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|c:\\meus_projetos\\teste\\aspnet-core-crud-dapper\\apiweb_dapper\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|c:\\meus_projetos\\teste\\aspnet-core-crud-dapper\\apiweb_dapper\\bll\\funcionariobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|solutionrelative:bll\\funcionariobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|c:\\meus_projetos\\teste\\aspnet-core-crud-dapper\\apiweb_dapper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|c:\\meus_projetos\\teste\\aspnet-core-crud-dapper\\apiweb_dapper\\dal\\funcionariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|solutionrelative:dal\\funcionariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|c:\\meus_projetos\\teste\\aspnet-core-crud-dapper\\apiweb_dapper\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{388260EA-9D0F-4160-BA27-6A16B8C5FE17}|ApiWeb_Dapper.csproj|c:\\meus_projetos\\teste\\aspnet-core-crud-dapper\\apiweb_dapper\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,6 +55,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "FuncionarioDAL.cs",
+              "DocumentMoniker": "C:\\meus_projetos\\teste\\ASPNET-CORE-CRUD-DAPPER\\ApiWeb_Dapper\\DAL\\FuncionarioDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\FuncionarioDAL.cs",
+              "ToolTip": "C:\\meus_projetos\\teste\\ASPNET-CORE-CRUD-DAPPER\\ApiWeb_Dapper\\DAL\\FuncionarioDAL.cs",
+              "RelativeToolTip": "DAL\\FuncionarioDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T01:10:44.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FuncionarioBLL.cs",
+              "DocumentMoniker": "C:\\meus_projetos\\teste\\ASPNET-CORE-CRUD-DAPPER\\ApiWeb_Dapper\\BLL\\FuncionarioBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\FuncionarioBLL.cs",
+              "ToolTip": "C:\\meus_projetos\\teste\\ASPNET-CORE-CRUD-DAPPER\\ApiWeb_Dapper\\BLL\\FuncionarioBLL.cs",
+              "RelativeToolTip": "BLL\\FuncionarioBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T01:08:50.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FuncionariosController.cs",
+              "DocumentMoniker": "C:\\meus_projetos\\teste\\ASPNET-CORE-CRUD-DAPPER\\ApiWeb_Dapper\\Controllers\\FuncionariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FuncionariosController.cs",
+              "ToolTip": "C:\\meus_projetos\\teste\\ASPNET-CORE-CRUD-DAPPER\\ApiWeb_Dapper\\Controllers\\FuncionariosController.cs",
+              "RelativeToolTip": "Controllers\\FuncionariosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-11T20:24:42.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Funcionario.cs",
               "DocumentMoniker": "C:\\meus_projetos\\teste\\ASPNET-CORE-CRUD-DAPPER\\ApiWeb_Dapper\\Models\\Funcionario.cs",
               "RelativeDocumentMoniker": "Models\\Funcionario.cs",
@@ -54,38 +101,24 @@
               "RelativeToolTip": "Models\\Funcionario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-11T20:28:39.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-11T20:28:39.528Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FuncionariosController.cs",
-              "DocumentMoniker": "C:\\meus_projetos\\teste\\ASPNET-CORE-CRUD-DAPPER\\ApiWeb_Dapper\\Controllers\\FuncionariosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\FuncionariosController.cs",
-              "ToolTip": "C:\\meus_projetos\\teste\\ASPNET-CORE-CRUD-DAPPER\\ApiWeb_Dapper\\Controllers\\FuncionariosController.cs",
-              "RelativeToolTip": "Controllers\\FuncionariosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-11T20:24:42.204Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\meus_projetos\\teste\\ASPNET-CORE-CRUD-DAPPER\\ApiWeb_Dapper\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\meus_projetos\\teste\\ASPNET-CORE-CRUD-DAPPER\\ApiWeb_Dapper\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-11T20:21:30.896Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\meus_projetos\\teste\\ASPNET-CORE-CRUD-DAPPER\\ApiWeb_Dapper\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -93,8 +126,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-08-11T20:21:00.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-11T20:21:00.029Z"
             }
           ]
         }
